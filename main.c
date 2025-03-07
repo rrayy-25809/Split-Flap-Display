@@ -4,7 +4,7 @@ void control_gpio(const char* state) {
     Py_Initialize();
 
     // gpio_control.py 모듈 불러오기
-    PyObject* pModule = PyImport_ImportModule("gpio_control");
+    PyObject* pModule = PyImport_ImportModule("test");
     if (pModule) {
         // control_gpio 함수 가져오기
         PyObject* pFunc = PyObject_GetAttrString(pModule, "control_gpio");
